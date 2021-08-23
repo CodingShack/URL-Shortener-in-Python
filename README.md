@@ -63,13 +63,15 @@ print("Shortened URL: " + result)
 All complete here, is our final code.
 
 ```python
-import pyshorteners
+import pyshorteners # Imported Pyshorteners
 
-URL = "Paste your link here"
+URL = "Paste your link here" # Making a variable, whichj will store the link.
 
-short_URL = pyshorteners.Shortener()
-result = short_URL.tinyurl.short(URL)
-print("Shortened URL: " + result)
+short_URL = pyshorteners.Shortener() # Calling the function to do the work.
+
+result = short_URL.tinyurl.short(URL) # Telling the function the location of the link.
+
+print("Shortened URL: " + result) # Printing the output.
 ```
 
 Now, here is our output.
