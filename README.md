@@ -1,6 +1,6 @@
 # How to Create URL Shortener in Python?
 
-![How to Create URL Shortener in Python?](https://blogger.googleusercontent.com/img/a/AVvXsEgzKQPZGCq-iWBIRwqskNta2oaKivuPF4IdiQehvzOi5NApgPjSA-Sjo9nh4kDNJvQDP3GhN0zIp5Km3ocljnw8aMw0KjmVa8OunHJLHFz3Sz3UA2VmPxYhajOKVnqH4tQW2baXdKO-dg4zKQtaicctHt1zpV_bjibpv5wnAphs_UIL0FzZ0w3iIZXN "How to Create URL Shortener in Python?1")
+![How to Create URL Shortener in Python?](https://blogger.googleusercontent.com/img/a/AVvXsEgzKQPZGCq-iWBIRwqskNta2oaKivuPF4IdiQehvzOi5NApgPjSA-Sjo9nh4kDNJvQDP3GhN0zIp5Km3ocljnw8aMw0KjmVa8OunHJLHFz3Sz3UA2VmPxYhajOKVnqH4tQW2baXdKO-dg4zKQtaicctHt1zpV_bjibpv5wnAphs_UIL0FzZ0w3iIZXN "How to Create URL Shortener in Python?")
 
 Hello Readers! So, you would have seen short URLs being used in various places (social media, websites, messaging platforms, etc.). Short URLs are easy to remember or type so they are very popular. 
 
@@ -32,3 +32,50 @@ In the first line of our code we have to import the library which we installed b
 
 Import the PyShorteners library using the code given below.
 
+```python
+import pyshorteners
+```
+
+Once you have imported pyshorteners. Our next step is to create a variable named "URL" which is basically a variable, going to store our link which is going to be shortened. The link will be in double quotes as it is a string.
+
+```python
+URL = "Paste your link here"
+```
+
+Next we're going to create another variable named "short_URL" which will call pyshorteners library, to shorten the url.
+
+```python
+short_URL = pyshorteners.Shortener()
+```
+
+In this step we're going to do the main step, we are going to make a variable named "result" and then we are telling pyshorteners to shorten the link which is in a variable named "URL", which we created earlier. Here "tinyurl" in the code is the website which is going to shorten the URL.
+
+```python
+result = short_URL.tinyurl.short(URL)
+```
+
+We have almost completed all the steps, in this last step we are going to print the URL which is shortened.
+
+```python
+print("Shortened URL: " + result)
+```
+
+All complete here, is our final code.
+
+```python
+import pyshorteners
+
+URL = "Paste your link here"
+
+short_URL = pyshorteners.Shortener()
+result = short_URL.tinyurl.short(URL)
+print("Shortened URL: " + result)
+```
+
+Now, here is our output.
+
+![Output - How to Create URL Shortener in Python?](https://1.bp.blogspot.com/-bCoM5wFgSEQ/YKk0O5-btTI/AAAAAAAABjU/0bXTFkq5WYUf3ZR9UfnyJqk5EZuDjgWBwCLcBGAsYHQ/s16000/Output.png "Output - How to Create URL Shortener in Python?")
+
+Peace ✌️
+
+----
