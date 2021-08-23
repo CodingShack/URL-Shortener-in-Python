@@ -79,5 +79,3 @@ Now, here is our output.
 ![Output - How to Create URL Shortener in Python?](https://1.bp.blogspot.com/-bCoM5wFgSEQ/YKk0O5-btTI/AAAAAAAABjU/0bXTFkq5WYUf3ZR9UfnyJqk5EZuDjgWBwCLcBGAsYHQ/s16000/Output.png "Output - How to Create URL Shortener in Python?")
 
 Peace ✌️
-
-----
