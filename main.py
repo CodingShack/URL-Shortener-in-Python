@@ -15,3 +15,5 @@ short_URL = pyshorteners.Shortener() # Calling the function to do the work.
 result = short_URL.tinyurl.short(URL) # Telling the function the location of the link.
 
 print("Shortened URL: " + result) # Printing the output.
+
+# The Code Ends here.
